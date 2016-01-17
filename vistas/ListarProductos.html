@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+    <input type="text" class="form-control" ng-model="buscador" placeholder="Buscar Productos">
+    <table class="table table-striped">
+    <tr>
+    	<td>Serie</td>
+    	<td>Nombre</td>
+    	<td>Cantidad</td>
+    	<td>Costo</td>
+    	<td>Precio</td>
+    	<td>Opciones</td>
+    </tr>
+   
+   	<tr ng-repeat="data in data |filter:buscador">
+	    <td>{{data.Serie}}</td>
+	    <td>{{data.Nombre}}</td>
+	    <td>{{data.Cantidad}}</td>
+	    <td>{{data.Costo}}</td>
+	    <td>{{data.Precio}}</td>
+	    <td>
+	    	<ul>
+	    		<li><a href="#/editar/{{data._id}}">Editar</a></li>
+	    		<li><a href="#/eliminar/{{data._id}}">Eliminar</a></li>
+	    	</ul>
+	    </td>
+   	</tr>
+    </table>
+    </div>
+</div>

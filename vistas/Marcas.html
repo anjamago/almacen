@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-3"></div>
+    <form ng-submit="NuevaMarca(marca)" class="col-md-6">
+
+        <div class=" form-group "  >
+            <label for="Marca">Buscar Producto</label>
+            <input type="text" ng-model="producto"  ng-change="autoCompletado(producto)"class="form-control"></input>
+        </div>
+       <div class="">
+			<div ng-repeat="d in datas" class="list-group" style="margin:0px; font-weight: bold;">
+			  	<a href="" class="list-group-item" ng-click="agregar(d)">{{d.Nombre}}</a>
+			</div>
+       </div>
+    </form>
+
+</div>
+

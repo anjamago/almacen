@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <script src="bower_components/angular/angular.min.js"></script>
+</head>
+<body ng-app='app'>
+<header class="navbar navbar-default navbar-static-top" >
+        <nav >
+
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#/">NuevoProducto</a>
+                </li>
+                <li>
+                    <a href="#/ventas">Ventas</a>
+                </li>
+                <li>
+                    <a href="#/factura">Facturas</a>
+                </li>
+                <li class="active">
+                    <a href="#/listar">Inventario</a>
+                </li>
+            </ul>
+        </nav>
+</header>
+
+<div class="container-fluid" ng-view >
+
+</div>
+
+</body>
+<script src="bower_components/angularRoute/angular-route.min.js"></script>
+<!-- script de angular -->
+
+<script src="js/Rutas.js"></script>
+<script src="js/Http.js"></script>
+<script src="js/Crud.js"></script>
+<script src="js/App.js"></script>
+
+
+
+<script src="bower_components/jquery/dist/jquery.min.js" ></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js" ></script>
+</html>
